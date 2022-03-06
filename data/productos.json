@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "HAMBURGUESA SENCILLA",
+    "imagen": "img/hamburguesa-sencilla.jpg",
+    "precio": 6500
+  },
+  {
+    "id": 2,
+    "nombre": "HAMBURGUESA DOBLE",
+    "imagen": "img/hamburguesa-doble.jpg",
+    "precio": 11000
+  },
+  {
+    "id": 3,
+    "nombre": "PERRO CALIENTE",
+    "imagen": "img/perro-caliente.png",
+    "precio": 6000
+  },
+  {
+    "id": 4,
+    "nombre": "PERRO CALIENTE ESPECIAL",
+    "imagen": "img/perro-caliente-especial.png",
+    "precio": 10000
+  },
+  {
+    "id": 5,
+    "nombre": "PORCION PIZZA",
+    "imagen": "img/pizza.png",
+    "precio": 2500
+  },
+  {
+    "id": 6,
+    "nombre": "PIZZA ESTOFADA",
+    "imagen": "img/pizza-estofada.jpg",
+    "precio": 4000
+  },
+  {
+    "id": 7,
+    "nombre": "SALCHIPAPA",
+    "imagen": "img/salchipapa.jpg",
+    "precio": 20000
+  },
+  {
+    "id": 8,
+    "nombre": "SANDWICH",
+    "imagen": "img/sandwich.jpg",
+    "precio": 16000
+  },
+  {
+    "id": 9,
+    "nombre": "GASEOSAS",
+    "imagen": "img/Gaseosa.jpg",
+    "precio": 2000
+  },
+  {
+    "id": 10,
+    "nombre": "JUGOS",
+    "imagen": "img/jugo.jpg",
+    "precio": 3000
+  },
+  {
+    "id": 11,
+    "nombre": "LIMONADA",
+    "imagen": "img/Limonada.jpg",
+    "precio": 3500
+  },
+  {
+    "id": 12,
+    "nombre": "CERVEZAS",
+    "imagen": "img/cerveza.jpg",
+    "precio": 4000
+  }
+]

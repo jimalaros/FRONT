@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="btn btn-outline-light my-2 my-sm-0" href="home.html">INICIO</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a class="btn btn-outline-light my-2 my-sm-0" href="registro.html">REGISTRARSE</a>
+            </form>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <div class="col-md-4">
+            <div class="box">
+                <h3>INICIAR SESIÓN</h3>
+                <p id="message" class="text-info"></p>
+                <form method="post" id="signUpForm">
+                    <div class="form-group mb-3">
+                        <label>Correo:</label>
+                        <input type="email" class="form-control" placeholder="Required" name="email" autofocus
+                            required="required">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Contraseña:</label>
+                        <input type="password" class="form-control" placeholder="Required" name="password"
+                            required="required">
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-outline-dark my-2 my-sm-0" href="https://api.apicommerce.tk/api">INICIAR SESIÓN</a>
+                        <p>¿No tienes cuenta?
+                            <a href="registro.html">Registrate</a>
+                        </p>
+                    </div>
+                    <div class="fs-5 fw-bolder">
+                        <p>
+                            También puedes iniciar sesión usando...
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center d-flex align-items-center">
+                        <hr>
+                        <button class="btn btn-outline-light" id="google">
+                            <a href="https://api.apicommerce.tk/google/auth">
+                                <img src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" width="24" />
+                            </a>
+                        </button>
+                        <button class="btn btn-outline-light" id="github">
+                            <a href="https://api.apicommerce.tk/github/auth">
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="24" />
+                            </a>
+                        </button>
+                        <button class="btn btn-outline-light" id="facebook">
+                            <a href="https://api.apicommerce.tk/facebook/auth">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="24" />
+                            </a>
+                        </button>
+                        <button class="btn btn-outline-light" id="linkedin">
+                            <a href="https://api.apicommerce.tk/linkedin/auth">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" />
+                            </a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
