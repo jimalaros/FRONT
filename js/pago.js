@@ -7,7 +7,7 @@ let vector = [];
 let informacion = JSON.parse(localStorage.getItem("productos"));
 let datos = informacion[informacion.length - 1];
 
-const title = datos.producto;
+const title = datos.titulo;
 console.log(title);
 const quantity = datos.cantidad;
 console.log(quantity);
@@ -27,6 +27,7 @@ function get_preference_id(e) {
   const payment_url = `${base_url}/mercadopago/pago`;
   //let MERCADOPAGO_PUBLIC_KEY = 'TEST-19a131dc-b914-4f5f-843b-87384f2ae4e4'
   
+  console.log(vector)
   const data = { items: vector }
 
   fetch(payment_url, {
