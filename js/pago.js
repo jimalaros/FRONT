@@ -26,9 +26,9 @@ function get_preference_id(e) {
 
   const payment_url = `${base_url}/mercadopago/pago`;
   //let MERCADOPAGO_PUBLIC_KEY = 'TEST-19a131dc-b914-4f5f-843b-87384f2ae4e4'
-  
-  console.log(vector)
-  const data = { items: vector }
+
+  console.log(vector);
+  const data = { items: vector };
 
   fetch(payment_url, {
     method: "POST",
@@ -69,8 +69,8 @@ function get_preference_id(e) {
     });
 }
 
-/**let payment_btn2 = document.getElementById("paypal_btn");
-payment_btn2.addEventListener('click', get_preference_paypal);
+var payment_btn2 = document.getElementById("paypal_btn");
+payment_btn2.addEventListener("click", get_preference_paypal);
 
 function get_preference_paypal(e) {
   // paso 1. Preparar el pago (ir al backend y obtener un preference_id)
@@ -80,20 +80,17 @@ function get_preference_paypal(e) {
 
   const payment_url = `${base_url}/paypal/pago`;
 
-  const data = { amount: 1 };
+  const data = { currency_code: "USD", value: unit_price };
 
   fetch(payment_url, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(data),
-    }
-  )
-  .then(response => response.json())
-  .then(data => {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  })
+  .then((response) => response.json())
+  .then((data) => {
     console.log(data);
-     //debugger
     const url = data.href;
     window.location.href = url;
   });
-
-}**/
+}
