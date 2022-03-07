@@ -8,11 +8,11 @@ let informacion = JSON.parse(localStorage.getItem("productos"));
 let datos = informacion[informacion.length - 1];
 
 const title = datos.titulo;
-console.log(title);
+//console.log(title);
 const quantity = datos.cantidad;
-console.log(quantity);
+//console.log(quantity);
 const unit_price = datos.precio * datos.cantidad;
-console.log(unit_price);
+//console.log(unit_price);
 
 const product = { title, unit_price, quantity };
 
@@ -69,7 +69,7 @@ function get_preference_id(e) {
     });
 }
 
-var payment_btn2 = document.getElementById("paypal_btn");
+let payment_btn2 = document.getElementById("paypal_btn");
 payment_btn2.addEventListener("click", get_preference_paypal);
 
 function get_preference_paypal(e) {

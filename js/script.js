@@ -1,32 +1,31 @@
 const base_url = "https://api.apicommerce.tk";
 
-let form = document.getElementById("signUpForm");
-form.addEventListener("submit", sign_upfunction);
+let form = document.getElementById("login_form");
+form.addEventListener("submit", login_event);
 
-function sign_upfunction(e) {
-  //prevent the browser redirection
+function login_event(e) {
+  // prevent the browser redirections
   e.preventDefault();
 
   let message = document.getElementById("message");
   message.textContent = "";
 
-  //get all inputs from the form
+  /* Get all inputs from the form */
   let formData = new FormData(form);
 
-  //Convert data into json
+  /* Convert data into json */
   let data = Object.fromEntries(formData);
 
-  const url_signUp = `${base_url}/sign-up`;
+  const url_login = `${base_url}/Login`;
 
-  fetch(url_signUp, {
+  fetch(url_login, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      form.reset();
-      message.textContent = data.message;
-    });
+  .then((response) => response.json())
+  .then((data) => {
+    form.reset();
+    message.textContent = data.token;
+  });
 }
