@@ -16,7 +16,7 @@ function login_event(e) {
   /* Convert data into json */
   let data = Object.fromEntries(formData);
 
-  const url_login = `${base_url}/Login`;
+  const url_login = `${base_url}/login`;
 
   fetch(url_login, {
     method: "POST",
