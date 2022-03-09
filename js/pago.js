@@ -81,6 +81,7 @@ function get_preference_paypal(e) {
   const payment_url = `${base_url}/paypal/pago`;
 
   const data = { currency_code: "USD", value: unit_price };
+  console.log(value);
 
   fetch(payment_url, {
     method: "POST",
